@@ -13,12 +13,12 @@ const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_name, _eyeColor, _shirtType, _bling) {
+function mintNFT (_name, _course, _hobby, _ingameName) {
     const NFT = {
         "name": _name,
-        "eyeColor": _eyeColor,
-        "shirtType": _shirtType,
-        "bling": _bling
+        "course": _course,
+        "hobby": _hobby,
+        "ingameName": _ingameName
     }
     NFTs.push(NFT);
     console.log("Minted: " + _name);
@@ -30,9 +30,9 @@ function listNFTs () {
  for(let i = 0; i< NFTs.length; i++) {
     console.log("\nID: \t\t" + (i + 1));
     console.log("Name: \t\t" + NFTs[i].name);
-    console.log("Eyecolor: \t" + NFTs[i].eyeColor);
-    console.log("Shirt Type: \t" + NFTs[i].shirtType);
-    console.log("Bling: \t\t" + NFTs[i].bling);
+    console.log("Course: \t" + NFTs[i].course);
+    console.log("Hobby: \t\t" + NFTs[i].hobby);
+    console.log("Ingame Name: \t" + NFTs[i].ingameName);
  }
 }
 
@@ -42,9 +42,10 @@ function getTotalSupply() {
 }
 
 // call your functions below this line
-mintNFT("Iris", "Brown", "Blouse", "Earrings");
-mintNFT("Bruce", "Blue", "Polo", "Gold Watch");
-mintNFT("Gli", "Grey", "Dress", "Silver Necklace");
-mintNFT("Drac", "Black", "Long Sleeve", "Gold Watch");
+mintNFT("Edward", "IT", "Valorant", "Hide");
+mintNFT("Gliezelle", "Civil Engineering", "Valorant", "Bleep");
+mintNFT("Clemen", "Interior Design", "Valorant", "Espresso");
+mintNFT("James", "IT", "Valorant", "Tokai");
 listNFTs();
 getTotalSupply();
+
