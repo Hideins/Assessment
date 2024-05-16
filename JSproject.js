@@ -44,8 +44,7 @@ function getTotalSupply() {
 // call your functions below this line
 mintNFT("Edward", "IT", "Valorant", "Hide");
 mintNFT("Gliezelle", "Civil Engineering", "Valorant", "Bleep");
-mintNFT("Clemen", "Interior Design", "Valorant", "Espresso");
+mintNFT("Clemen", "HRM", "Valorant", "Espresso");
 mintNFT("James", "IT", "Valorant", "Tokai");
 listNFTs();
 getTotalSupply();
-
